@@ -1,0 +1,51 @@
+@import './less/main.less';
+
+.service{
+    .margin(24,14,24,14);
+    .padding(15,15,15,15);
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.09);
+    .border-radius(6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .service-entry__left{
+        flex: 1;
+        .title{
+            .fs(16);
+            color: #363636;
+            .lh(16);
+            .margin-bottom(6);
+        }
+        .services{
+            display: flex;
+            .service-item{
+                .lh(10);
+                margin-right: 6%;
+                display: flex;
+                img{
+                    .w(12);
+                    .h(12)
+                }
+                span{
+                    .fs(10);
+                    color: #999;
+                    .margin-left(4);
+                }
+            }
+        }
+        
+    }
+    .service-entry__left:last-child{
+        margin-right: 0;
+    }
+    .service-entry__right{
+        .border-radius(16);
+        box-shadow: 0 2px 4px 0 rgba(0,0,0,.06);
+        .lh(22);
+        .h(22);
+        text-align: center;
+        .w(64);
+        color: #ea3667;
+        .fs(11);
+    }
+}

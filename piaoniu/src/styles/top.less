@@ -1,0 +1,48 @@
+@import './less/main.less';
+
+.top{
+    width:100%;
+    .h(50);
+    background-color: rgba(0,0,0,.7);
+    display: inline-flex;
+    align-items: center;
+    a{
+        display: flex;
+        width:100%;
+        .h(34);
+        margin:auto;
+        .logo{
+            .w(34);
+            .h(34);
+            .margin-left(15);
+            .border-radius(5);
+            background-image: url(//static.piaoniu.com/nuxt-static/img/logo.8f74deb.png);
+            background-size: 34px 34px;
+        }
+        .copywrite{
+            color: #fff;
+            .fs(14);
+            .margin-left(15);
+            .w(216);
+            .app{
+                .fs(11);
+//              .margin-bottom(3);
+            }
+            .bottom{
+                .fs(14);
+            }
+        }
+        .botton{
+            text-align: center;
+            .fs(14);
+            .margin-right(15);
+            .h(30);
+            .lh(30);
+            background-color: #ff2661;
+            .border-radius(15);
+            color: #fff;
+            .w(80);
+        }
+        
+    }
+}

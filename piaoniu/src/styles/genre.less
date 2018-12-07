@@ -1,0 +1,38 @@
+@import './less/main.less';
+
+.genre{
+    width:100%;
+    .h(120);
+//  background: pink;
+    display: flex;
+    box-sizing: border-box;
+    .padding(24,14,24,14);
+    .inner{
+        width:100%;
+        .h(71);
+        margin:auto;
+        white-space: nowrap;
+        overflow: hidden;
+        overflow-x: auto;
+        a{
+            display: inline-block;
+            .margin-right(30);
+            .w(54);
+            img{
+                display: block;
+                .w(48);
+                .h(48);
+                margin: 0 auto;
+                .margin-bottom(8);
+            }
+            .title{
+                text-align: center;
+                .fs(13);
+                .lh(16);
+                color: #5c5c56;
+            }
+
+        }
+ 
+    }
+}

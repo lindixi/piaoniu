@@ -1,0 +1,126 @@
+@import './less/main.less';
+
+.movieList{
+    .margin-top(38);
+    .guess-like-title{
+        .fs(18);
+        color:#565656;
+        .padding(0,14,0,14);
+    }
+    .guess-like-wrap{
+        .activity{
+            position: relative;
+            margin-left: 15px;
+            margin-right: 15px;
+            background-color: #fff;
+            .main-top{
+                .min-height(125);
+                position: relative;
+                display: block;
+                .poster-wrap{
+                    position: absolute;
+                    left: 0;
+                    .top(15);
+                    .video-play{
+                        .background-size(26,26);
+                        display: none;
+                        background-repeat: no-repeat;
+                        position: absolute;
+                        background-position: 50% 50%;
+                        background-image: url('//static.piaoniu.com/nuxt-static/img/icon-play.29dd962.png');
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        .video{
+                            width:0;
+                            height:0;
+                        }
+                    }
+                    .poster{
+                            .w(75);
+                            .h(100);
+                            img{
+                                .w(75);
+                                .h(100);
+                            }
+                    }
+                }
+                .info{
+                    padding-top: 15px;
+                    .margin-left(92);
+                    .border-bottom(1,solid,hsla(0,0%,90%,.5));
+                    .fs(14);
+                    .title-line{
+                        display:flex;
+                        .title{
+                            font-size: 15px;
+                            color: #333;
+                            .max-height(44);
+                            .lh(22);
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-family: Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans;
+                            font-weight: 600;
+                        }
+                        .activityTag{
+                            flex-shrink: 0;
+                            .max-width(40);
+                            .margin-left(4);
+                            color: #fff;
+                        }
+                    }
+                    .time-address{
+                        font-size: 12px;
+                        color: #999;
+                        .margin-top(9);
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        .split{
+                            .margin(0,4,0,4);
+                        }
+                    }
+                    .rank{
+                        font-size: 10px;
+                        color: #999;
+                        .margin-top(4);
+                        .margin-bottom(16);
+                        span{
+                            .fs(12);
+                            font-weight: 700;
+                            color: #ffb02e;
+                        }
+                    }
+                    .price-wrap{
+                        position: relative;
+                        .margin-bottom(10);
+                        .price{
+                            position: relative;
+                            .top(1);
+                            color: #ff2661;
+                            .fs(18);
+                            font-weight: 700;
+                            .margin-right(4);                            
+                        }
+                        .qi{
+                            .fs(10);
+                            color: #999;
+                        }
+                        .status-text{
+                            .fs(10);
+                            color: #999;
+                            .w(45);
+                            .lh(19);
+                            text-align: center;
+                            background-color: #f0f0f0;
+                        }
+                    }
+                    .promotion-info{
+                        .margin-bottom(10);
+                    }
+                }
+            }
+        }
+    }
+}

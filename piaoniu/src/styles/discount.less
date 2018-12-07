@@ -1,0 +1,95 @@
+@import './less/main.less';
+
+
+.discount{
+    .activity-floor{
+        background-color: #fff;
+        .padding-bottom(8);
+        .padding-top(32);  
+        .header-hot{
+            overflow: hidden;
+            .padding(0,14,16,14);
+            .title{
+                font-weight: 700;
+                color: #565656;
+                .fs(18);
+                float: left;
+            }
+            .more{
+                float: right;
+                .fs(14);
+                color: #999;
+                .h(17);
+                .lh(17);
+                .padding-right(10);
+                background-image: url(//static.piaoniu.com/nuxt-static/img/arr-right.1655c6a.png);
+                background-position: 100%;
+                background-repeat: no-repeat;
+                .background-size(5,9);
+            }
+        }
+        .activities{
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            .wrap{
+                .padding-left(14);
+                display: flex;
+                flex-wrap: nowrap;
+                .activity-floor-item{
+                    .w(102);
+                    .margin-right(10);
+                    flex-shrink: 0;
+                    a{
+                       .poster{
+                           width: 100%;
+                           position: relative;
+                           img{
+                               .h(137);
+                               width: 100%;
+                           }
+                           .count{
+                               .w(30);
+                               .h(25);
+                               background:red; 
+                               opacity: 0.7;
+                               color:#fff;
+                               text-align: center;
+                               .lh(20);
+                               position: absolute;
+                               top:0;
+                               laft:0;
+                               .fs(8);
+                           }
+                       }
+                       .name{
+                            white-space: nowrap;
+                            .margin-top(7);
+                            .margin-bottom(3);
+                            .fs(12);
+                            color: #262626;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                       }
+                       .price{
+                            .h(17);
+                            .lh(1);
+                            .price-num{
+                                color: #ff2661;
+                                .fs(12);
+                            }
+                            .price-desc{
+                                .fs(12);
+                                transform: scale(.8);
+                                transform-origin: left bottom;
+                                display: inline-block;
+                                .margin-left(2);
+                                color: #999;
+                            }
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
