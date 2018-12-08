@@ -7,3 +7,6 @@ class Detail extends React.Component{
 		</div>
 	}
 }
+
+
+export default Detail;

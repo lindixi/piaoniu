@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import {HashRouter,Router} from 'react-router-dom';
+import {Route,withRouter} from 'react-router-dom';
 
 import '../../styles/list.less';
 
@@ -8,8 +8,8 @@ import { ListView } from 'antd-mobile';
 
 axios.defaults.baseURL='http://localhost:8000';
 class List extends React.Component{
-	constructor(){
-		super();
+	constructor(props){
+		super(props);
 		this.state = {
 			likeList:[]
 		}
@@ -31,14 +31,24 @@ class List extends React.Component{
 			console.log(err);
 		})
 	}
+	handlerGotoDetails(a,b,c){
+		let {history} = this.props;
+		console.log(this.props)
+		history.push(
+			'/detail/'+a
+		)
+	
+	}
+	
+	
 	render(){
 		return <div className="movieList">
 			<div className="guess-like-title">猜你喜欢</div>
 			<div className="guess-like-wrap">
 				{this.state.likeList.map((item,i)=>{
-					return <div className="activity" key={i}>
+					return <div className="activity" key={i} onClick={this.handlerGotoDetails.bind(this,item.recommendContent.id)}>
 					<div className="main-top">
-						<a href="#" className="poster-wrap">
+						<a className="poster-wrap">
 							<div className="video-play">
 								<video></video>
 							</div>
@@ -79,4 +89,5 @@ class List extends React.Component{
 	}
 }
 
+List = withRouter(List);
 export default List;
