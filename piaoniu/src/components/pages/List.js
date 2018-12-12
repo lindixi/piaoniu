@@ -2,11 +2,12 @@ import React from 'react';
 import axios from 'axios';
 import {Route,withRouter} from 'react-router-dom';
 
+
 import '../../styles/list.less';
 
 import { ListView } from 'antd-mobile';
 
-axios.defaults.baseURL='http://localhost:8000';
+
 class List extends React.Component{
 	constructor(props){
 		super(props);
