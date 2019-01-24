@@ -10,7 +10,7 @@ class Top extends React.Component{
 					<p className="app">下载票牛app</p>
 					<p className="bottom">领188元新人礼包</p>
 				</div>
-				<div className="botton">立即下载</div>
+				<div className="botton">立即下载是</div>
 			</a>
 		</div>
 	}
